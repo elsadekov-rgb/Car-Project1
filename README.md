@@ -24,16 +24,16 @@
 - **Pillow** — обработка изображений
 
 ## Установка и запуск
-   Запасутить Bat файл pppp
-   или
-   git clone https://github.com/ваш-username/auto-parts-catalog.git
-   cd auto-parts-catalog
-   Создайте виртуальное окружение:
-   python -m venv venv
-   Активируйте окружение:
-   Windows:
-   venv\Scripts\activate
-   Установите зависимости:
-   pip install pyqt6 sqlalchemy pillow pandas openpyxl
-   Запустите программу:
-   python main.py
+Запасутить Bat файл pppp
+или
+git clone https://github.com/ваш-username/auto-parts-catalog.git
+cd auto-parts-catalog
+Создайте виртуальное окружение:
+python -m venv venv
+Активируйте окружение:
+Windows:
+venv\Scripts\activate
+Установите зависимости:
+pip install pyqt6 sqlalchemy pillow pandas openpyxl
+Запустите программу:
+python main.py
