@@ -50,7 +50,7 @@
 - Добавлены тестовые данные (марки Toyota, BMW, Lada)
 
 Структура проекта
-auto_parts_catalog/
+```auto_parts_catalog/
 ├── main.py                    # точка входа
 ├── database/
 │   ├── models.py              # модели БД (Brand, Model, Part и др.)
@@ -63,3 +63,11 @@ auto_parts_catalog/
 ├── resources/images/          # изображения запчастей
 ├── run.bat                    # удобный запуск
 └── auto_parts.db              # база данных (создаётся автоматически)
+
+
+
+
+
+
+
+
