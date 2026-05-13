@@ -24,16 +24,42 @@
 - **Pillow** — обработка изображений
 
 ## Установка и запуск
-Запасутить Bat файл pppp
-или
-git clone https://github.com/ваш-username/auto-parts-catalog.git
-cd auto-parts-catalog
-Создайте виртуальное окружение:
-python -m venv venv
-Активируйте окружение:
-Windows:
-venv\Scripts\activate
-Установите зависимости:
-pip install pyqt6 sqlalchemy pillow pandas openpyxl
-Запустите программу:
-python main.py
+## 🚀 Установка и запуск
+
+1. Склонируйте репозиторий:
+   ```
+   git clone https://github.com/ваш-username/auto-parts-catalog.git
+   cd auto-parts-catalog
+   python -m venv venv
+   venv\Scripts\activate
+   pip install pyqt6 sqlalchemy pillow pandas openpyxl
+   python main.py
+   или же 
+   run.bat
+   auto_parts_catalog/
+   ```
+Изменения и доработки в проекте
+- Добавлена полноценная система марок и моделей автомобилей
+- Реализована фильтрация запчастей по марке
+- Добавлен столбец "Марка" в основную таблицу
+- Улучшена логика обновления таблицы после добавления/редактирования запчастей
+- Сделана удобная форма добавления марок и моделей
+- Исправлены баги с закрытием окон и импортами
+- Добавлен автоматический сброс фильтра на "Все марки" после добавления запчасти
+- Улучшен дизайн и пользовательский интерфейс
+- Добавлены тестовые данные (марки Toyota, BMW, Lada)
+
+Структура проекта
+auto_parts_catalog/
+├── main.py                    # точка входа
+├── database/
+│   ├── models.py              # модели БД (Brand, Model, Part и др.)
+│   └── __init__.py
+├── ui/
+│   ├── main_window.py         # главное окно + таблица
+│   ├── part_form.py           # форма добавления/редактирования запчасти
+│   ├── brand_model_form.py    # форма добавления марок и моделей
+│   └── __init__.py
+├── resources/images/          # изображения запчастей
+├── run.bat                    # удобный запуск
+└── auto_parts.db              # база данных (создаётся автоматически)
